@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>L'Inspecteur | Übersicht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/less" href="/less/all.less">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script src="https://kit.fontawesome.com/6d9210bf5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo-container">
+            <img class="svg--filter-black" src="/images/linspecteur-logo.svg" />
+        </div>
+    </header>
+    <main>
+        <div class="headline-wrap is--space is--margin-center">
+            <h1>Henlo my Love.</h1>
+            <h2>Was essen?</h2>
+        </div>
+        <div class="search-wrap is--space is--margin-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Rezepte durchsuchen..."></input>
+        </div>
+        <div class="filter-wrap is--space">
+            <button class="is--filter is--active">Alles</button>
+            <button class="is--filter">Snacks</button>
+            <button class="is--filter">Hauptspeisen</button>
+            <button class="is--filter">Gebäck</button><button class="is--filter">Hauptspeisen</button>
+            <button class="is--filter">Gebäck</button>
+        </div>
+        <div class="result-wrap is--space">
+            <a href="chicken-curry.html" class="result-el jambalaya">
+                <div class="result-gradient">
+                    <div class="result-content-text">
+                        <h3>Jambalaya</h3>
+                        <p>Schnell, lecker, Shrimpus</p>
+                    </div>
+                </div>
+
+            </a>
+            <a href="chicken-curry.html" class="result-el chicken-curry">
+                <div class="result-gradient">
+                    <div class="result-content-text">
+                        <h3>Chicken Curry</h3>
+                        <p>Mit Naan bitte</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
