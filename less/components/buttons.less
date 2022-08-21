@@ -6,7 +6,19 @@ button {
     background-color: @primary-color;
     border: none;
     border-radius: 30px;
-    margin: 4.5em 0;
+
+    &.is--home {
+        margin: 4.5em 0;
+    }
+
+    &.is--detail {
+        margin: 1em 0 2em 0;
+    }
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
 }
 
 // input styling
