@@ -44,3 +44,34 @@
         }
     }
 }
+
+.instructions-headline,
+.instructions-list-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructions-list {
+    ol {
+        margin: 0;
+        padding: 0 0 0 1.5em;
+
+        li {
+            position: relative;
+            font-weight: 400;
+            padding: 1.5em 0 0 1em;
+
+            span {
+                color: @ingredient-light-text;
+                font-weight: 100;
+            }
+
+            &::marker {
+                color: @primary-color;
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+        }
+    }
+}
