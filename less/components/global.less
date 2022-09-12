@@ -7,6 +7,39 @@ body {
     -o-font-smoothing: antialiased;
 }
 
+.select-wrap {
+    position: relative;
+
+    &::before {
+        content: "\f078";
+        position: absolute;
+        color: @light-text;
+        background-color: @primary-color;
+        font-size: 1em;
+        top: 0;
+        right: 0;
+        padding: .75em;
+        border-radius: 0 30px 30px 0;
+    }
+}
+
+select {
+    background-color: @select-text;
+    color: @light-text;
+    height: 2.5em;
+    width: 10em;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1em;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .08);
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
 .is--primary {
     color: @primary-color;
 }
